@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasthya Sahayak - AI Healthcare Assistant</title>
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External JavaScript (deferred for performance) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo interactive-element">
+                    <div class="logo-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <span>Swasthya Sahayak</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#platforms">Platforms</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="theme-toggle" id="themeToggle" role="button" tabindex="0" aria-label="Toggle dark mode">
+                        <div class="theme-toggle-handle">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="chatBtn">
+                        <i class="fas fa-comment-medical"></i>
+                        <span>Chat Now</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#platforms">Platforms</a>
+                <a href="#about">About</a>
+                <button class="btn btn-primary" style="margin-top: 1rem;">
+                    <i class="fas fa-comment-medical"></i>
+                    Start Chat
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-sparkles"></i>
+                        <span>AI-Powered Healthcare Revolution</span>
+                    </div>
+                    <h1>Your Trusted Health Companion for Rural India</h1>
+                    <p>Experience the future of healthcare with our intelligent AI assistant that provides instant, reliable medical guidance in your language, anytime, anywhere.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-secondary btn-lg interactive-element" id="startConversationBtn">
+                            <i class="fas fa-robot"></i>
+                            <span>Start Conversation</span>
+                        </button>
+                        <a href="#features" class="btn btn-outline btn-lg interactive-element">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Discover Features</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <h3 data-count="50000">0</h3>
+                        <p>Lives Touched</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <h3>24/7</h3>
+                        <p>Always Available</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <h3 data-count="98">0</h3>
+                        <p>Accuracy Rate</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <h3 data-count="5">0</h3>
+                        <p>Regional Languages</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Revolutionizing Healthcare Access</h2>
+                    <p>Our cutting-edge AI technology brings world-class healthcare guidance to every corner of rural India, breaking down barriers and building healthier communities.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card fade-in interactive-element">
+                        <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Advanced AI Diagnosis</h3>
+                        <p>Leverage state-of-the-art machine learning algorithms to receive accurate preliminary health assessments.</p>
+                        <a href="#" class="feature-link">Explore AI Features <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card fade-in interactive-element">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Instant 24/7 Support</h3>
+                        <p>Get immediate healthcare guidance any time of day or night. Our AI never sleeps, ensuring you always have access to support.</p>
+                        <a href="#" class="feature-link">Learn About Availability <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card fade-in interactive-element">
+                        <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3>Completely Free</h3>
+                        <p>Access premium healthcare guidance at no cost. Our mission is to democratize healthcare and eliminate financial barriers.</p>
+                        <a href="#" class="feature-link">Why It's Free <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card fade-in interactive-element">
+                        <div class="feature-icon"><i class="fas fa-language"></i></div>
+                        <h3>Multi-Language Support</h3>
+                        <p>Communicate in Hindi, English, Odia, and local dialects. Our AI understands cultural context and regional health patterns.</p>
+                        <a href="#" class="feature-link">Supported Languages <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card fade-in interactive-element">
+                        <div class="feature-icon"><i class="fas fa-shield-virus"></i></div>
+                        <h3>Privacy Protected</h3>
+                        <p>Your health data is completely secure. We use advanced encryption and never store personal medical information.</p>
+                        <a href="#" class="feature-link">Privacy Policy <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card fade-in interactive-element">
+                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                        <h3>Expert Validated</h3>
+                        <p>Our AI recommendations are backed by medical professionals and continuously updated with the latest guidelines.</p>
+                        <a href="#" class="feature-link">Meet Our Experts <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Simple Steps to Better Health</h2>
+                    <p>Our streamlined process makes getting expert healthcare guidance as easy as having a conversation.</p>
+                </div>
+                <div class="steps">
+                    <div class="step fade-in">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Share Your Concerns</h3>
+                            <p>Describe your symptoms or health questions in your own words. Our AI understands natural language.</p>
+                        </div>
+                    </div>
+                    <div class="step fade-in">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>AI Analysis & Insights</h3>
+                            <p>Our AI processes your information instantly, providing evidence-based insights tailored to you.</p>
+                        </div>
+                    </div>
+                    <div class="step fade-in">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Personalized Action Plan</h3>
+                            <p>Receive clear, actionable guidance on home remedies, lifestyle changes, and when to see a doctor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section class="platforms" id="platforms">
+            <div class="container">
+                <div class="platforms-content">
+                    <div class="platforms-text fade-in">
+                        <h2>Healthcare On Every Platform</h2>
+                        <p>Access Swasthya Sahayak through your preferred communication channel. We meet you where you are.</p>
+                        <button class="btn btn-primary btn-lg interactive-element" id="getPlatformsBtn">
+                            <i class="fas fa-rocket"></i>
+                            <span>Get Started Today</span>
+                        </button>
+                    </div>
+                    <div class="platforms-grid fade-in">
+                        <div class="platform-card whatsapp interactive-element">
+                            <i class="fab fa-whatsapp"></i>
+                            <h3>WhatsApp Bot</h3>
+                            <p>Chat instantly for quick health guidance and emergency support.</p>
+                        </div>
+                        <div class="platform-card interactive-element">
+                            <i class="fas fa-globe"></i>
+                            <h3>Web Platform</h3>
+                            <p>Comprehensive interface with detailed health tracking and history.</p>
+                        </div>
+                        <div class="platform-card mobile interactive-element">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile App</h3>
+                            <p>Native mobile experience with offline capabilities and notifications.</p>
+                        </div>
+                        <div class="platform-card voice interactive-element">
+                            <i class="fas fa-microphone"></i>
+                            <h3>Voice Assistant</h3>
+                            <p>Speak naturally in your local language for hands-free consultations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content fade-in">
+                    <h2>Transforming Lives Through Technology</h2>
+                    <p>Born from the Smart India Hackathon, Swasthya Sahayak represents a breakthrough in democratizing healthcare. Our mission is to bridge the gap between communities and quality medical access.</p>
+                    <p>This groundbreaking initiative is proudly supported by the Government of Odisha as part of their digital health transformation strategy, aiming for a healthier future for all citizens.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Swasthya Sahayak</h3>
+                    <p>Empowering rural India with AI-driven healthcare solutions. Your health, our technology, a better tomorrow.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook" class="interactive-element"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="interactive-element"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" class="interactive-element"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="interactive-element"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Access</h3>
+                    <ul>
+                        <li><a href="#features" class="interactive-element"><i class="fas fa-chevron-right"></i> Features</a></li>
+                        <li><a href="#how-it-works" class="interactive-element"><i class="fas fa-chevron-right"></i> User Guide</a></li>
+                        <li><a href="#platforms" class="interactive-element"><i class="fas fa-chevron-right"></i> Platforms</a></li>
+                        <li><a href="#about" class="interactive-element"><i class="fas fa-chevron-right"></i> Our Mission</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support & Contact</h3>
+                    <ul>
+                        <li><a href="mailto:support@swasthyasahayak.gov.in" class="interactive-element"><i class="fas fa-envelope"></i> Email Us</a></li>
+                        <li><a href="tel:+911234567890" class="interactive-element"><i class="fas fa-phone"></i> Call Support</a></li>
+                        <li><a href="#" class="interactive-element"><i class="fas fa-headset"></i> 24/7 Emergency Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal & Privacy</h3>
+                    <ul>
+                        <li><a href="#" class="interactive-element"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="#" class="interactive-element"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                        <li><a href="#" class="interactive-element"><i class="fas fa-balance-scale"></i> Medical Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Swasthya Sahayak - Government of Odisha Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
